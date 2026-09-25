@@ -1,7 +1,6 @@
 # TriEval 
 
-R implementation of TriEval for estimating prompt effects and model- and
-task-level variation in benchmark responses. Estimation uses regularized Gaussian
+R implementation of TriEval for estimating model capability, task difficulty, and prompt effects. Estimation uses regularized Gaussian
 variational expectation–maximization (RGVEM).
 
 ## Files
