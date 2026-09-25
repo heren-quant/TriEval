@@ -8,7 +8,7 @@ Gaussian variational expectation–maximization (RGVEM).
 
 | File | Purpose |
 |---|---|
-| `R/main.R` | GVEM estimation functions |
+| `R/main.R` | RGVEM estimation functions |
 | `R/real_data_clean.R` | Preprocess ARC Challenge responses and construct the design matrix |
 | `R/real_data_run.R` | Fit the model to the processed ARC Challenge data |
 | `R/random_sample_replications.R` | Prepare repeated random subsets of the processed data |
@@ -83,7 +83,7 @@ list2env(selected[c("resp", "dummy_matrix", "group", "I", "J", "S",
                    "N_full", "all_start")], envir = .GlobalEnv)
 ```
 
-Use the GVEM call in `R/real_data_run.R` with these inputs. Sourcing that entire
+Use the RGVEM call in `R/real_data_run.R` with these inputs. Sourcing that entire
 script instead reloads the full dataset. To preserve the relative penalty
 strength of its full-data example, set `lambda = 30 * S / N_full` and
 `c = 0.04 * S` in the sample fit.
